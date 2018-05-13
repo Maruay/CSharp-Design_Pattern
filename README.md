@@ -3,7 +3,7 @@ Design Pattern
 
 <b>1. Creational Design Pattern</b>
 
-	These design patterns are all about class instantiation. This pattern can be further divided into class-creation patterns and object-creational patterns. While class-creation patterns use inheritance effectively in the instantiation process, object-creation patterns use delegation effectively to get the job done.
+These design patterns are all about class instantiation. This pattern can be further divided into class-creation patterns and object-creational patterns. While class-creation patterns use inheritance effectively in the instantiation process, object-creation patterns use delegation effectively to get the job done.
 
 - <b>Abstract Factory</b>
 Creates an instance of several families of classes
@@ -20,7 +20,7 @@ A class of which only a single instance can exist
 
 <b>2. Structural Design Pattern</b>
 
-	These design patterns are all about Class and Object composition. Structural class-creation patterns use inheritance to compose interfaces. Structural object-patterns define ways to compose objects to obtain new functionality.
+These design patterns are all about Class and Object composition. Structural class-creation patterns use inheritance to compose interfaces. Structural object-patterns define ways to compose objects to obtain new functionality.
 
 - <b>Adapter</b>
 Match interfaces of different classes
@@ -41,7 +41,7 @@ An object representing another object
 
 <b>3. Behavioral Design Pattern</b>
 
-	These design patterns are all about Class's objects communication. Behavioral patterns are those patterns that are most specifically concerned with communication between objects.
+These design patterns are all about Class's objects communication. Behavioral patterns are those patterns that are most specifically concerned with communication between objects.
 
 - <b>Chain of responsibility</b>
 A way of passing a request between a chain of objects
@@ -70,12 +70,3 @@ Defines a new operation to a class without change
 
 CR : https://sourcemaking.com/design_patterns
 Singleton : https://www.youtube.com/watch?v=7aTPriFeqwE&t=4s
-
-
-<pre><code>
-if [ $i == 0 ]; then
-echo "0"
-else
-echo "1"
-fi
-</code></pre>
