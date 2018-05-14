@@ -69,5 +69,5 @@ Defer the exact steps of an algorithm to a subclass
 Defines a new operation to a class without change
 
 CR : https://sourcemaking.com/design_patterns
-
+https://varavut.com/365days-of-program-day-50/
 Singleton : https://www.youtube.com/watch?v=7aTPriFeqwE&t=4s

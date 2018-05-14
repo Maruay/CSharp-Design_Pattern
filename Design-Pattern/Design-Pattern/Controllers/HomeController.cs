@@ -5,6 +5,7 @@ using System.Web;
 using System.Web.Mvc;
 using Design_Pattern.Models.Singleton;
 using Design_Pattern.Models.Facade;
+using Design_Pattern.Models.Factory_Method;
 
 namespace Design_Pattern.Controllers
 {
@@ -33,10 +34,41 @@ namespace Design_Pattern.Controllers
             ResultFacade += accessingBank.depositCash(200.00);
             #endregion
 
+            #region Factory Method
+
+            EnemyShipFactory shipFactory = new EnemyShipFactory();
+            EnemyShip theEnemy = null;
+            theEnemy = shipFactory.makeEnemyShip("B");
+            string resultFac = doStuffEnemy(theEnemy);
+
+
+            #endregion
+
+            #region Abstract Factory
+
+            #endregion
+
+            #region Builder
+
+            #endregion
+
+            #region State
+
+            #endregion
+
             ViewBag.Message = "Modify this template to jump-start your ASP.NET MVC application. <br />User ID : " 
                 + userID + " <br />User Pwd : " + userPwd + " <br />User Name : " + userName;
 
             return View();
+        }
+
+        public static string doStuffEnemy(EnemyShip anEnemyShip)
+        {
+            string ret = "";
+            ret += anEnemyShip.followHeroShip();
+            ret += anEnemyShip.displayEnemyShip();
+            ret += anEnemyShip.enemyShipShoots();
+            return ret;
         }
 
         public ActionResult About()

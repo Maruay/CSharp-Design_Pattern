@@ -192,6 +192,11 @@
     <Compile Include="Models\Facade\BankAccountFacade.cs" />
     <Compile Include="Models\Facade\FundsCheck.cs" />
     <Compile Include="Models\Facade\SecurityCodeCheck.cs" />
+    <Compile Include="Models\Factory_Method\BigUFOEnemyShip.cs" />
+    <Compile Include="Models\Factory_Method\EnemyShip.cs" />
+    <Compile Include="Models\Factory_Method\EnemyShipFactory.cs" />
+    <Compile Include="Models\Factory_Method\RocketEnemyShip.cs" />
+    <Compile Include="Models\Factory_Method\UFOEnemyShip.cs" />
     <Compile Include="Models\Singleton\Singleton.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
