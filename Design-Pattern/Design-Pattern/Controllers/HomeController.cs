@@ -6,6 +6,7 @@ using System.Web.Mvc;
 using Design_Pattern.Models.Singleton;
 using Design_Pattern.Models.Facade;
 using Design_Pattern.Models.Factory_Method;
+using Design_Pattern.Models.Builder;
 
 namespace Design_Pattern.Controllers
 {
@@ -50,6 +51,25 @@ namespace Design_Pattern.Controllers
 
             #region Builder
 
+            RobotBuilder oldStyleRobot = new OldRobotBuilder();
+            RobotEngineer robotEngineer = new RobotEngineer(oldStyleRobot);
+            robotEngineer.makeRobot();
+            Robot firstRobot = robotEngineer.getRobot();
+            string resultBuilder = string.Empty;
+            resultBuilder += firstRobot.getRobotHead() + "\n";
+            resultBuilder += firstRobot.getRobotTorso() + "\n";
+            resultBuilder += firstRobot.getRobotArms() + "\n";
+            resultBuilder += firstRobot.getRobotLegs() + "\n";
+
+            RobotBuilder newStyleRobot = new NewRobotBuilder();
+            RobotEngineer robotEngineerNew = new RobotEngineer(newStyleRobot);
+            robotEngineerNew.makeRobot();
+            Robot secondRobot = robotEngineerNew.getRobot();
+            string resultBuilderNew = string.Empty;
+            resultBuilderNew += secondRobot.getRobotHead() + "\n";
+            resultBuilderNew += secondRobot.getRobotTorso() + "\n";
+            resultBuilderNew += secondRobot.getRobotArms() + "\n";
+            resultBuilderNew += secondRobot.getRobotLegs() + "\n";
             #endregion
 
             #region State

@@ -188,6 +188,12 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\AccountModels.cs" />
+    <Compile Include="Models\Builder\NewRobotBuilder.cs" />
+    <Compile Include="Models\Builder\OldRobotBuilder.cs" />
+    <Compile Include="Models\Builder\Robot.cs" />
+    <Compile Include="Models\Builder\RobotBuilder.cs" />
+    <Compile Include="Models\Builder\RobotEngineer.cs" />
+    <Compile Include="Models\Builder\RobotPlan.cs" />
     <Compile Include="Models\Facade\AccountNumberCheck.cs" />
     <Compile Include="Models\Facade\BankAccountFacade.cs" />
     <Compile Include="Models\Facade\FundsCheck.cs" />
