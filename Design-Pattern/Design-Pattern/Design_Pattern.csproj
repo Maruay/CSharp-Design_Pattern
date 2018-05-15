@@ -187,6 +187,7 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\Abstract_Factory\AbstractFactory.cs" />
     <Compile Include="Models\AccountModels.cs" />
     <Compile Include="Models\Builder\NewRobotBuilder.cs" />
     <Compile Include="Models\Builder\OldRobotBuilder.cs" />

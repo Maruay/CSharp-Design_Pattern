@@ -7,6 +7,7 @@ using Design_Pattern.Models.Singleton;
 using Design_Pattern.Models.Facade;
 using Design_Pattern.Models.Factory_Method;
 using Design_Pattern.Models.Builder;
+using Design_Pattern.Models.Abstract_Factory;
 
 namespace Design_Pattern.Controllers
 {
@@ -47,6 +48,8 @@ namespace Design_Pattern.Controllers
 
             #region Abstract Factory
 
+            string resultAbstractFac = AbstractFactory.MainFn();
+
             #endregion
 
             #region Builder
@@ -75,6 +78,8 @@ namespace Design_Pattern.Controllers
             #region State
 
             #endregion
+
+
 
             ViewBag.Message = "Modify this template to jump-start your ASP.NET MVC application. <br />User ID : " 
                 + userID + " <br />User Pwd : " + userPwd + " <br />User Name : " + userName;
